@@ -438,7 +438,7 @@ export const decodeGenericNistRecord = (
             buffer,
             valueStartOffset,
             fieldEndOffset,
-            options,
+            options?.[nistFieldKey.value.key.field],
           );
     const nistField = { key: nistFieldKey.value.key, value };
 
